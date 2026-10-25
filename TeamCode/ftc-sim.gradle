@@ -1,0 +1,26 @@
+// Applied by TeamCode/build.gradle ONLY when Gradle is run with -PftcSim.
+//
+// ftc-sim (https://github.com/ngi-collective/ftc-sim, Maven Central org.ngi-collective.ftc-sim)
+// runs these same OpModes on a laptop against a simulated BIOBUZZ field:
+//   ./gradlew -PftcSim :TeamCode:dashboard                  -> browser dashboard, http://localhost:8765
+//   ./gradlew -PftcSim :TeamCode:testSimulatedDebugUnitTest -> headless 30 s runs of every Auto
+//
+// It adds a "simulated" product flavour next to the normal "robot" one, so with the flag the
+// robot APK task becomes assembleRobotDebug. The simulated robot's device names live in
+// src/simulated/java/.../BioBuzzSimRobot.java and its physics in robot-config/biobuzz.json.
+apply plugin: 'org.ngi-collective.ftc-sim'
+
+ftcSim {
+    version = '12.0.4'
+    season = 'biobuzz'
+    seasonVersion = '1.0.0'
+}
+
+tasks.withType(Test).configureEach {
+    maxHeapSize = '2g'
+    testLogging {
+        showStandardStreams = true
+        events 'passed', 'failed', 'skipped'
+        exceptionFormat 'full'
+    }
+}

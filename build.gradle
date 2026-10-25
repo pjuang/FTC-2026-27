@@ -9,6 +9,14 @@ buildscript {
         mavenCentral()
         google()
     }
+    // BIOBUZZ: the ftc-sim simulator plugin is only put on the classpath when you ask for it with
+    // -PftcSim (e.g. ./gradlew -PftcSim :TeamCode:dashboard). A normal robot build never sees it.
+    // See TeamCode/README-AUTO.md.
+    if (project.hasProperty('ftcSim')) {
+        dependencies {
+            classpath 'org.ngi-collective.ftc-sim:gradle-plugin:12.0.4'
+        }
+    }
 }
 
 plugins {

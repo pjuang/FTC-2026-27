@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "BIOBUZZ AUTO BLUE FAR: match staging (TU06 10.3.1: 3 NECTAR per upward CELL, 4 POLLEN per GARDEN) + 4 preload POLLEN on the tiles touching the robot's front (10.3.1.A.iv). FLOWER POLLEN omitted.",
+  "elements": {
+    "red-nectar-1": {
+      "kind": "RED_NECTAR",
+      "cell": "RED AUDIENCE"
+    },
+    "blue-nectar-1": {
+      "kind": "BLUE_NECTAR",
+      "cell": "BLUE SCORING"
+    },
+    "red-nectar-2": {
+      "kind": "RED_NECTAR",
+      "cell": "RED AUDIENCE"
+    },
+    "blue-nectar-2": {
+      "kind": "BLUE_NECTAR",
+      "cell": "BLUE SCORING"
+    },
+    "red-nectar-3": {
+      "kind": "RED_NECTAR",
+      "cell": "RED AUDIENCE"
+    },
+    "blue-nectar-3": {
+      "kind": "BLUE_NECTAR",
+      "cell": "BLUE SCORING"
+    },
+    "red-garden-1": {
+      "kind": "POLLEN",
+      "xMetres": -1.7552,
+      "yMetres": -1.7542
+    },
+    "blue-garden-1": {
+      "kind": "POLLEN",
+      "xMetres": 1.7552,
+      "yMetres": 1.7542
+    },
+    "red-garden-2": {
+      "kind": "POLLEN",
+      "xMetres": -1.6832,
+      "yMetres": -1.7542
+    },
+    "blue-garden-2": {
+      "kind": "POLLEN",
+      "xMetres": 1.6832,
+      "yMetres": 1.7542
+    },
+    "red-garden-3": {
+      "kind": "POLLEN",
+      "xMetres": -1.6112,
+      "yMetres": -1.7542
+    },
+    "blue-garden-3": {
+      "kind": "POLLEN",
+      "xMetres": 1.6112,
+      "yMetres": 1.7542
+    },
+    "red-garden-4": {
+      "kind": "POLLEN",
+      "xMetres": -1.5392,
+      "yMetres": -1.7542
+    },
+    "blue-garden-4": {
+      "kind": "POLLEN",
+      "xMetres": 1.5392,
+      "yMetres": 1.7542
+    },
+    "blue-preload-1": {
+      "kind": "POLLEN",
+      "xMetres": 1.3522,
+      "yMetres": 0.1065
+    },
+    "blue-preload-2": {
+      "kind": "POLLEN",
+      "xMetres": 1.3522,
+      "yMetres": 0.0355
+    },
+    "blue-preload-3": {
+      "kind": "POLLEN",
+      "xMetres": 1.3522,
+      "yMetres": -0.0355
+    },
+    "blue-preload-4": {
+      "kind": "POLLEN",
+      "xMetres": 1.3522,
+      "yMetres": -0.1065
+    }
+  }
+}

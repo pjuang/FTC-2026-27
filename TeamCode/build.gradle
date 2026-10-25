@@ -27,3 +27,9 @@ android {
 dependencies {
     implementation project(':FtcRobotController')
 }
+
+// BIOBUZZ: simulator support, only with -PftcSim. Without the flag this line does nothing and
+// the robot build is exactly the template's.
+if (project.hasProperty('ftcSim')) {
+    apply from: 'ftc-sim.gradle'
+}

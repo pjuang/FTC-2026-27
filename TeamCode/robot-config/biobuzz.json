@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "name": "BioBuzz",
+  "chassis": {
+    "widthMetres": 0.40,
+    "lengthMetres": 0.40,
+    "heightMetres": 0.05,
+    "deckHeightMetres": 0.105,
+    "massKilograms": 14.0
+  },
+  "drivetrain": {
+    "type": "mecanum",
+    "wheelRadiusMetres": 0.048,
+    "gearRatio": 1.0,
+    "trackWidthMetres": 0.34,
+    "wheelBaseMetres": 0.30,
+    "strafeEfficiency": 0.8,
+    "gripCoefficient": 0.9
+  },
+  "imu": { "name": "imu" },
+  "camera": {
+    "name": "Webcam 1",
+    "forwardMetres": 0.16,
+    "leftMetres": 0.0,
+    "heightMetres": 0.105,
+    "yawDegrees": 0.0,
+    "pitchDegrees": 35.0,
+    "rollDegrees": 0.0,
+    "framesPerSecond": 30.0
+  },
+  "motors": {
+    "fLeft":    { "role": "frontLeft",  "mirrored": true,  "rpm": 312.0,  "ticksPerRevolution": 537.7 },
+    "fRight":   { "role": "frontRight", "mirrored": false, "rpm": 312.0,  "ticksPerRevolution": 537.7 },
+    "bLeft":    { "role": "backLeft",   "mirrored": true,  "rpm": 312.0,  "ticksPerRevolution": 537.7 },
+    "bRight":   { "role": "backRight",  "mirrored": false, "rpm": 312.0,  "ticksPerRevolution": 537.7 },
+    "launcher": { "role": "launcher",   "mirrored": false, "rpm": 6000.0, "ticksPerRevolution": 28.0 }
+  },
+  "launchers": {
+    "launcher": {
+      "wheelRadiusMetres": 0.0508,
+      "transferEfficiency": 0.5,
+      "spinUpSeconds": 1.2,
+      "exitYawDegrees": 0.0,
+      "exitPitchDegrees": 75.0,
+      "mouth": {
+        "forwardMetres": 0.24,
+        "leftMetres": 0.0,
+        "heightMetres": 0.06,
+        "lengthMetres": 0.06,
+        "widthMetres": 0.32,
+        "tallMetres": 0.12
+      }
+    }
+  },
+  "servos": {
+    "intake": {
+      "type": "continuous",
+      "surfaceMetresPerSecond": 1.4,
+      "sweep": {
+        "forwardMetres": 0.24,
+        "leftMetres": 0.0,
+        "heightMetres": 0.085,
+        "lengthMetres": 0.08,
+        "widthMetres": 0.36,
+        "tallMetres": 0.07
+      }
+    }
+  },
+  "sensors": {
+    "battery": { "type": "voltage" }
+  }
+}
